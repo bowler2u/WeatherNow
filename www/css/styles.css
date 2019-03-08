@@ -110,6 +110,7 @@
     background-size: cover;
 }
 .weatherHeader{
+    overflow-y: hidden;
     color: white;
     position: fixed;
     top:0%;
