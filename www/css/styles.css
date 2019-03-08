@@ -61,8 +61,8 @@
 
 /**** MAIN BODY ****/
 body{
-    overflow-y: no!important;
-}
+overflow-x: hidden!important;
+    overflow-y: hidden!important;}
 
 .page-content-lightrain{
     background-image: url(img/DarkBackdrop.png);
@@ -113,8 +113,8 @@ body{
     background-size: cover;
 }
 .weatherHeader{
-    overflow-y: no!important;
-    color: white;
+    overflow-x: hidden!important;
+    overflow-y: hidden!important;    color: white;
     position: fixed;
     top:0%;
     right:30%;
@@ -125,13 +125,15 @@ body{
     line-height: .8;
 }
 .content-block{
-    overflow-y: no!important;
-}
+    overflow-x: hidden!important;
+    overflow-y: hidden!important;}
 #temp
 {
         font-size: xx-large;
 }
 .content-block-inner {
+    overflow-x: hidden!important;
+    overflow-y: hidden!important;
     background: transparent;
     padding: 10px 15px;
     margin-left: -15px;
@@ -189,6 +191,8 @@ body{
         text-align: center;
         line-height: .8;
         font-size: 20px;
+        overflow-x: hidden!important;
+        overflow-y: hidden!important;
     }
 
     .forecastT{
@@ -226,8 +230,8 @@ body{
 
 /********* WEATHER EFFECTS ********/
 .weatherAnim{
-    overflow-x: hidden;
-    overflow-y: no!important;
+    overflow-x: hidden!important;
+    overflow-y: hidden!important;
     position: fixed;
     height: 100%;
     width: 200%;
@@ -238,6 +242,7 @@ body{
     margin: 0 auto;
     position: relative;
     overflow-x: hidden!important;
+    overflow-y: hidden!important;
 }
 .clouds #cld1{
     position:fixed;
@@ -297,23 +302,32 @@ body{
     width: 100%;
     background-color:;
     overflow-x: hidden!important;
+    overflow-y: hidden!important;
 }
 .rain #rain1{ 
     transform: translate3d(200px, -300px, 0);
-    animation: rain 5s linear infinite; 
+    animation: rain 5s linear infinite;
+    overflow-x: hidden!important;
+    overflow-y: hidden!important;
 }
 .rain #rain2{
     transform: translate3d(200px, -200px, 0);
     animation: rain 4s linear infinite;
+    overflow-x: hidden!important;
+    overflow-y: hidden!important;
 
 }
 .rain #rain3{
     transform: translate3d(200px, -200px, 0);
     animation: rain 3s linear infinite;
+    overflow-x: hidden!important;
+    overflow-y: hidden!important;
 }
 .rain #rain4{
     transform: translate3d(200px, -400px, 0);
     animation: rain 4s linear infinite;
+    overflow-x: hidden!important;
+    overflow-y: hidden!important;
 
 }
 
@@ -323,6 +337,7 @@ body{
     position:fixed;
     margin: 0 auto;
     overflow-x: hidden!important;
+    overflow-y: hidden!important;
 }
 .overcast #cld1{
     position:fixed;
