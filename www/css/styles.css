@@ -120,6 +120,18 @@
     text-align: center;
     line-height: .8;
 }
+#temp
+{
+        font-size: xx-large;
+}
+.content-block-inner {
+    background: transparent;
+    padding: 10px 15px;
+    margin-left: -15px;
+    width: 100%;
+    position: relative;
+    color: #000;
+}
 /**************/
 
 /**** LOWER BODY ********/

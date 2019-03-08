@@ -25,7 +25,7 @@ $$(document).on('deviceready', function(){
         dataType: "json"    
     }).done(function(response){
         console.log(response);
-        assignWeather(response.weather[0].id); //801 response.weather[0].id
+        assignWeather(response.weather[0].id); 
         $('#date').html(getDate());
         $('#location').html(response.name);
         $('#temp').html(float2int(response.main.temp)+" °C");
@@ -73,6 +73,57 @@ $$(document).on('deviceready', function(){
             $('#fc'+i).html(forcast);
         }
     });
+    
+document.addEventListener('deviceready', inAppbrowser, false);
+    
+function inAppbrowser(){
+
+    
+    $$('#mysite').on('touchend', function(){
+    var optionsArray =[ 
+                // For all OS's
+				'location=no',
+				
+				// For Android, iOS & Windows Phone only
+				'hidden=yes',
+				
+				// Android and iOS only
+				'clearcache=yes',
+				'clearsessioncache=yes',
+				
+				// iOS only
+				// Transition style options are fliphorizontal, crossdissolve or coververtical (Default)
+				'transitionstyle=fliphorizontal',
+				'toolbar=yes',
+				'closebuttoncaption=Exit',
+				// Tool bar position options are top or bottom (Default)
+				'toolbarposition=top',
+				'disallowoverscroll=yes',
+				'enableViewportScale=yes',
+				'mediaPlaybackRequiresUserAction=yes',
+				'allowInlineMediaPlayback=yes',
+				'keyboardDisplayRequiresUserAction=no',
+				'suppressesIncrementalRendering=yes',
+				// Presentation style options are pagesheet, formsheet or fullscreen (Default)
+				'presentationstyle=formsheet',
+
+				// Android only
+				'zoom=no',
+				'hardwareback=no',
+				
+				// Windows only
+				// If location is set to no there be no control presented to user to close IAB window.
+				'fullscreen=yes' ];    
+    
+    var options = optionsArray.join();     
+   var jbroswer = window.open('http://smallworldwebdevelopment.com/', '_blank', options);  jbroswer.show();  
+    });
+    
+    
+}      
+    
+    
+    
 });
 
 function assignWeather(weatherState){
