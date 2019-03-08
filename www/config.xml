@@ -2,7 +2,7 @@
 <widget id="com.phonegap.weathernow" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>WeatherFun</name>
     <description>
-        A simple weather app with simple & fun weather animations
+        A simple weather app with simple, fun weather animations
     </description>
     <author email="cameron@smallworldwebdevelopment.com" href="http://smallworldwebdevelopment.com/">
         Cameron Bowler @ Small World Web Developemnt
